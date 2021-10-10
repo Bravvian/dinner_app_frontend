@@ -74,7 +74,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "dinner-app-angular:build:production"
+              "browserTarget": "dinner-app-angular:build:production",
+              "proxyConfig": "src/proxy-prod.conf.json"
             }
           }
         },
