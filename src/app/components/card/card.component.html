@@ -1,0 +1,8 @@
+
+<div class="card" fxFlex>
+  <img alt="Recipe Image" (click)="openDetails()" [src]="image" (error)="setDefaultPic()" class="image-size">
+
+  <div class="container">
+    <p class="sub-title"> {{item?.name}} </p>
+  </div>
+</div>

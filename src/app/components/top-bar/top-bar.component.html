@@ -1,0 +1,10 @@
+<mat-toolbar style="height: 70px">
+  <span>Dinner Application</span>
+
+  <mat-form-field class="field"  appearance="fill">
+    <input [(ngModel)]="searchResult" (blur)="triggerSearchRequest()"  matInput placeholder="Insert ingredients">
+    <mat-hint align="start"><strong>Separate each ingredient with commas</strong> </mat-hint>
+  </mat-form-field>
+
+
+</mat-toolbar>
