@@ -1,0 +1,6 @@
+{
+  "/api/v1": {
+    "target": "https://cryptic-bastion-81914.herokuapp.com",
+    "secure": false
+  }
+}
