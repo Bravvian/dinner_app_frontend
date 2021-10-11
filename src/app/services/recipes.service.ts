@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from "./api.service";
 import {HttpParams} from "@angular/common/http";
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipesService {
+  baseUrl = environment.apiUrl;
 
   constructor(
     private apiService: ApiService
@@ -28,6 +30,6 @@ export class RecipesService {
   }
 
   getUrl(extension = ''){
-    return `api/v1/recipes${extension}`;
+    return this.baseUrl + `api/v1/recipes${extension}`;
   }
 }
